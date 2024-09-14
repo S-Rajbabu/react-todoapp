@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure body covers the viewport height */
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+}
+
+.form-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-list-container {
+    flex: 1; /* Allow this section to take the remaining space */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    padding: 20px;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/*add to do button*/
+.add-btn {
+    background-color: #00796b;
+    color: #ffffff;
+
+}
+
+.add-btn:hover {
+    background-color: #004d40;
+}
+
+.update-btn {
+    background-color: #0288d1;
+    color: #ffffff;
+}
+
+.update-btn:hover {
+    background-color: #01579b;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    background: #e0f2f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.todo-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.todo-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.todo-label strong {
+    margin-right: 5px;
+}
+
+.todo-status {
+    font-weight: bold;
+}
+
+.todo-status.completed {
+    color: #388e3c; /* Green color for completed */
+}
+
+.todo-status.incomplete {
+    color: #d32f2f; /* Red color for incomplete */
+}
+
+.todo-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.complete-btn {
+    background-color: #388e3c;
+    color: #ffffff;
+}
+
+.complete-btn:hover {
+    background-color: #2e7d32;
+}
+
+.delete-btn {
+    background-color: #d32f2f;
+    color: #ffffff;
+}
+
+.delete-btn:hover {
+    background-color: #c62828;
+}
+
+.edit-btn {
+    background-color: #fbc02d;
+    color: #ffffff;
+}
+
+.edit-btn:hover {
+    background-color: #f9a825;
+}
